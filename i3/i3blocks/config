@@ -1,0 +1,4 @@
+### I3Blocks ###
+[TIME_DATE]
+command=date +" %H:%M:%S"
+interval=1

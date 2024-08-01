@@ -1,2 +1,2 @@
-# Suckless
-My Suckless
+# Dotfiles
+My Dotfiles

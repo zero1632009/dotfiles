@@ -11,5 +11,3 @@ set fish_greeting
 alias ls="exa -l"
 alias la="exa -la"
 alias open="xdg-open"
-
-fish_config theme choose "agnoster"

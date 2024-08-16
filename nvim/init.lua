@@ -1,0 +1,11 @@
+-- IMPORT --
+require("config.lazy")
+require("settings.setting")
+require("settings.tokyonight")
+require("settings.barbar")
+require("settings.lualine")
+require("settings.treesitter")
+require("settings.cmp")
+require("settings.cmp_tabnine")
+require("settings.coc")
+require("settings.maps")

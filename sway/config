@@ -30,10 +30,10 @@ default_floating_border pixel 2
 # Dracula window border colors
 client.focused          #BD93F9 #BD93F9 #F8F8F2 #BD93F9 #BD93F9
 client.focused_inactive #44475A #44475A #F8F8F2 #44475A #44475A
-client.unfocused        #282A36 #282A36 #F8F8F2 #282A36 #282A36
+client.unfocused        #1E1F29 #1E1F29 #F8F8F2 #1E1F29 #1E1F29
 client.urgent           #FF5555 #FF5555 #F8F8F2 #FF5555 #FF5555
 client.placeholder      #44475A #44475A #F8F8F2 #44475A #44475A
-client.background       #282A36
+client.background       #1E1F29
 
 ### Key bindings
 #
@@ -172,15 +172,18 @@ bindsym $mod+r mode "resize"
 ### Status Bar
 bar {
     position top
+    font pango:JetBrains Mono Nerd Font Bold 12
     status_command while date +'%Y-%m-%d %X'; do sleep 1; done
 
     colors {
-        statusline #F8F8F2
-        background #282A36
+        statusline         #F8F8F2
+        background         #1E1F29
+        separator          #6272A4
+
         inactive_workspace #44475A #44475A #6272A4
-        active_workspace   #BD93F9 #BD93F9 #F8F8F2
-        focused_workspace  #BD93F9 #BD93F9 #F8F8F2
-        urgent_workspace   #FF5555 #FF5555 #F8F8F2
+        active_workspace   #BD93F9 #BD93F9 #1E1F29
+        focused_workspace  #FF79C6 #FF79C6 #1E1F29
+        urgent_workspace   #FF5555 #FF5555 #1E1F29
     }
 }
 

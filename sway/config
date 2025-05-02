@@ -27,6 +27,14 @@ xwayland enable
 default_border pixel 2
 default_floating_border pixel 2
 
+# Dracula window border colors
+client.focused          #BD93F9 #BD93F9 #F8F8F2 #BD93F9 #BD93F9
+client.focused_inactive #44475A #44475A #F8F8F2 #44475A #44475A
+client.unfocused        #282A36 #282A36 #F8F8F2 #282A36 #282A36
+client.urgent           #FF5555 #FF5555 #F8F8F2 #FF5555 #FF5555
+client.placeholder      #44475A #44475A #F8F8F2 #44475A #44475A
+client.background       #282A36
+
 ### Key bindings
 #
 # Basics:
@@ -161,20 +169,19 @@ mode "resize" {
 }
 bindsym $mod+r mode "resize"
 
-#
-# Status Bar:
-#
+### Status Bar
 bar {
     position top
-
-    # When the status_command prints a new line to stdout, swaybar updates.
-    # The default just shows the current date and time.
     status_command while date +'%Y-%m-%d %X'; do sleep 1; done
 
     colors {
-        statusline #ffffff
-        background #323232
-        inactive_workspace #32323200 #32323200 #5c5c5c
+        statusline #F8F8F2
+        background #282A36
+        inactive_workspace #44475A #44475A #6272A4
+        active_workspace   #BD93F9 #BD93F9 #F8F8F2
+        focused_workspace  #BD93F9 #BD93F9 #F8F8F2
+        urgent_workspace   #FF5555 #FF5555 #F8F8F2
     }
 }
+
 include /etc/sway/config.d/*

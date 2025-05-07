@@ -1,3 +1,3 @@
 #!/bin/bash
-dwmblocks &
+slstatus &
 nitrogen --restore &

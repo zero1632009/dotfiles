@@ -60,7 +60,7 @@ set signcolumn=yes
 
 " Set Theme
 colorscheme tokyonight-night
-let g:airline_theme='base16_atelier_plateau'
+let g:airline_theme='base16_atelier_savanna'
 
 " Line
 set termguicolors

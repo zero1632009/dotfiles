@@ -4,7 +4,7 @@
 call plug#begin()
 
 " Theme
-Plug 'folke/tokyonight.nvim'
+Plug 'morhetz/gruvbox'
 Plug 'akinsho/bufferline.nvim', { 'tag': '*' }
 
 " Bar
@@ -65,7 +65,7 @@ set updatetime=300
 set signcolumn=yes
 
 " Set Theme
-colorscheme tokyonight-night
+colorscheme gruvbox
 let g:airline_theme='base16_atelier_savanna'
 
 " Line

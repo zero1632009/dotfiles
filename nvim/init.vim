@@ -1,4 +1,4 @@
-""" Vim Config
+""" Vim Configuration
 
 " Plugins
 call plug#begin()
@@ -6,6 +6,12 @@ call plug#begin()
 " Theme
 Plug 'folke/tokyonight.nvim'
 Plug 'akinsho/bufferline.nvim', { 'tag': '*' }
+
+" Bar
+Plug 'akinsho/bufferline.nvim', { 'tag': '*' }
+
+" Automatic pairing
+Plug 'jiangmiao/auto-pairs'
 
 " File Manager
 Plug 'preservim/nerdtree'

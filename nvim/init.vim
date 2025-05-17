@@ -5,7 +5,7 @@ call plug#begin()
 
 " Theme
 Plug 'morhetz/gruvbox'
-Plug 'akinsho/bufferline.nvim', { 'tag': '*' }
+Plug 'AlphaTechnolog/pywal.nvim', { 'as': 'pywal' }
 
 " Bar
 Plug 'akinsho/bufferline.nvim', { 'tag': '*' }

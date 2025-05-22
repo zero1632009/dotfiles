@@ -40,6 +40,8 @@ Plug 'voldikss/vim-floaterm'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'sheerun/vim-polyglot'
 Plug 'puremourning/vimspector'
+Plug 'liuchengxu/vista.vim'
+Plug 'lukas-reineke/indent-blankline.nvim'
 
 call plug#end()
 
@@ -72,6 +74,41 @@ let g:airline_theme='base16_atelier_savanna'
 set termguicolors
 lua << EOF
 require("bufferline").setup{}
+EOF
+
+" Vista
+function! NearestMethodOrFunction() abort
+  return get(b:, 'vista_nearest_method_or_function', '')
+endfunction
+set statusline+=%{NearestMethodOrFunction()}
+autocmd VimEnter * call vista#RunForNearestMethodOrFunction()
+let g:vista_icon_indent = ["╰─▸ ", "├─▸ "]
+let g:vista_default_executive = 'ctags'
+let g:vista_executive_for = {
+let g:vista_executive_for = {
+  \ 'cpp': 'vim_lsp',
+  \ 'php': 'vim_lsp',
+  \ }
+let g:vista_ctags_cmd = {
+      \ 'haskell': 'hasktags -x -o - -c',
+      \ }
+let g:vista_fzf_preview = ['right:50%']
+let g:vista#renderer#enable_icon = 1
+let g:vista#renderer#icons = {
+\   "function": "\uf794",
+\   "variable": "\uf71b",
+\  }
+
+" IndentLine
+lua << EOF
+require("ibl").setup {
+  indent = {
+    char = "│",
+  },
+  scope = {
+    enabled = true
+  }
+}
 EOF
 
 " File Manager Setting

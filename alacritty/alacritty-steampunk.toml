@@ -1,0 +1,71 @@
+### Alacritty steampunk street ###
+# Env
+[env]
+TERM = "xterm-256color"
+
+# Window
+[window]
+opacity = 0.6
+padding.x = 10
+padding.y = 10
+decorations = "Full"
+decorations_theme_variant = "Dark"
+
+# Font
+[font]
+size = 11.0
+
+[font.normal]
+family = "JetBrains Mono Nerd Font"
+style = "Regular"
+
+[font.bold]
+family = "JetBrains Mono Nerd Font"
+style = "Bold"
+
+[font.italic]
+family = "JetBrains Mono Nerd Font"
+style = "Italic"
+
+[font.bold_italic]
+family = "JetBrains Mono Nerd Font"
+style = "Bold Italic"
+
+# Cursor
+[cursor]
+style = "Block"
+
+# Bell
+[bell]
+animation = "EaseOutExpo"
+duration  = 0
+color     = "#BA8B46"
+
+# Steampunk/Victorian
+[colors]
+primary.background = "#1a1b1c"
+primary.foreground = "#c5c8c6"
+
+cursor.text = "#1a1b1c"
+cursor.cursor = "#f0c674"
+
+selection.text = "#ffffff"
+selection.background = "#373b41"
+
+normal.black =   "#282a2e"
+normal.red =     "#a54242"
+normal.green =   "#8c9440"
+normal.yellow =  "#de935f"
+normal.blue =    "#5f819d"
+normal.magenta = "#85678f"
+normal.cyan =    "#5e8d87"
+normal.white =   "#c5c8c6"
+
+bright.black =   "#373b41"
+bright.red =     "#cc6666"
+bright.green =   "#b5bd68"
+bright.yellow =  "#f0c674"
+bright.blue =    "#81a2be"
+bright.magenta = "#b294bb"
+bright.cyan =    "#8abeb7"
+bright.white =   "#ffffff"

@@ -103,21 +103,22 @@ for i in groups:
         ]
     )
 
+# Layouts
 layouts = [
     layout.MonadTall(
-        border_normal = "#ff6c6b",
-        border_focus = "#c678dd",
-        margin = 9,
-        ),
+        border_normal = "#5C4A3E",
+        border_focus  = "#D4AF37",
+        margin        = 9,
+    ),
     layout.MonadWide(
-        border_normal = "#ff6c6b",
-        border_focus = "#c678dd",
-        margin = 9,
-        ),
+        border_normal = "#5C4A3E",
+        border_focus  = "#D4AF37",
+        margin        = 9,
+    ),
     layout.Floating(
-        border_normal = "#ff6c6b",
-        border_focus = "#c678dd",
-        ),
+        border_normal = "#5C4A3E",
+        border_focus  = "#D4AF37",
+    ),
 ]
 
 widget_defaults = dict(
@@ -133,35 +134,33 @@ screens = [
             [
                 widget.GroupBox(
                     highlight_method='line',
-                    background = "#282c34",
-                    foreground = "#bbc2cf",
-                    active = "#bbc2cf",
-                    inactive = "#ff6c6b",
-                    highlight_color = "#c678dd",
-                    this_current_screen_border = "#c678dd",
-                    this_screen_border = "#c678dd",
-                    other_current_screen_border = "#c678dd",
-                    other_screen_border = "#c678dd",
-                    ),
-                widget.Spacer(
-                    background = "#282c34",
-                    foreground = "#bbc2cf",
-                    ),
+                    background            = "#3A3F47",
+                    foreground            = "#F5F1E0",
+                    active                = "#F5F1E0",
+                    inactive              = "#FFB74D",
+                    highlight_color       = "#7A5230",
+                    this_current_screen_border = "#D4AF37",
+                    this_screen_border         = "#7A5230",
+                    other_current_screen_border= "#7A5230",
+                    other_screen_border        = "#7A5230",
+                ),
+                widget.Spacer(background="#3A3F47"),
                 widget.Clock(
-                    format="%Y-%m-%d %a %I:%M %p",
-                    background = "#282c34",
-                    foreground = "#bbc2cf",
-                             ),
+                    format     = "%Y-%m-%d %a %I:%M %p",
+                    background = "#3A3F47",
+                    foreground = "#F5F1E0",
+                ),
                 widget.CurrentLayout(
-                    background = "#282c34",
-                    foreground = "#bbc2cf",
-                    ),
+                    background = "#3A3F47",
+                    foreground = "#F5F1E0",
+                ),
                 widget.Systray(
-                    background = "#282c34",
-                    foreground = "#bbc2cf",
-                    ),
+                    background = "#3A3F47",
+                    foreground = "#F5F1E0",
+                ),
             ],
             25,
+            background="#3A3F47",
         ),
     ),
 ]
